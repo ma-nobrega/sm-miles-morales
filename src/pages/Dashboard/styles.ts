@@ -125,7 +125,13 @@ export const Developers = styled.div`
 
 export const Image = styled.div`
   grid-area: IMAGE;
+  position: relative;
+  z-index: 0;
   img {
-    width: 100%;
+    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    top: -8rem;
+    left: -28rem;
   }
 `;
