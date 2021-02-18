@@ -7,9 +7,18 @@ import {
   Logo,
   NavBarSecondary,
   Social,
+  Main,
+  Description,
+  Buttons,
+  Developers,
+  Image,
 } from './styles';
 
 import logo from '../../assets/icons/logo-spidermanbig.svg';
+import marvel from '../../assets/icons/marvel.svg';
+import ps from '../../assets/icons/ps.svg';
+import spiderManText from '../../assets/spiderman-text.png';
+import spiderMan from '../../assets/spiderman.png';
 
 const Dashboard: React.FC = () => {
   return (
@@ -40,6 +49,35 @@ const Dashboard: React.FC = () => {
           <FaTwitter />
         </Social>
       </Header>
+      <Main>
+        <Description>
+          <div>
+            <img src={spiderManText} alt="" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
+            velit magna vitae mauris orci fames posuere nibh. Sit tellus amet
+            facilisi sit odio pulvinar scelerisque quam et. Ultrices facilisis
+            nunc massa diam, quis mi imperdiet.
+          </p>
+
+          <Buttons>
+            <a href="a">Pre-order now</a>
+            <a href="a">watch the teaser</a>
+          </Buttons>
+
+          <Developers>
+            <img src={ps} alt="" />
+            <img src={marvel} alt="" />
+          </Developers>
+        </Description>
+        <Image>
+          <div>
+            <img src={spiderMan} alt="" />
+          </div>
+        </Image>
+      </Main>
     </Container>
   );
 };

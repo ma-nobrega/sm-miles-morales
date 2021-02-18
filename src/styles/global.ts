@@ -18,8 +18,12 @@ export default createGlobalStyle`
     background: #0B0C10;
   }
   body,button, input, textarea{
-    font: 500 1.6rem Mukta;
+    font: 300 1.6rem Mukta;
     color: var(--color-text-base)
+  }
+
+  a{
+    text-decoration:none;
   }
   :root {
   font-size: 60%;
