@@ -51,9 +51,7 @@ const Dashboard: React.FC = () => {
       </Header>
       <Main>
         <Description>
-          <div>
-            <img src={spiderManText} alt="" />
-          </div>
+          <img src={spiderManText} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
@@ -73,9 +71,7 @@ const Dashboard: React.FC = () => {
           </Developers>
         </Description>
         <Image>
-          <div>
-            <img src={spiderMan} alt="" />
-          </div>
+          <img src={spiderMan} alt="" />
         </Image>
       </Main>
     </Container>

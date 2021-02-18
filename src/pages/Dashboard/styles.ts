@@ -7,6 +7,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 1440px) {
+    width: 90%;
+  }
 `;
 export const Header = styled.div`
   padding-top: 2rem;
@@ -62,6 +65,8 @@ export const Social = styled.div`
 `;
 
 export const Main = styled.div`
+  position: relative;
+  z-index: 0;
   display: grid;
   width: 100%;
   grid-template-rows: 1fr;
@@ -70,12 +75,15 @@ export const Main = styled.div`
 `;
 
 export const Description = styled.div`
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 10rem;
   grid-area: DESCRIPTION;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
-  height: calc(100vh - 10rem);
+  > img {
+    width: 100%;
+  }
   > p {
     color: #959698;
     margin-top: 1.6rem;
@@ -117,7 +125,7 @@ export const Developers = styled.div`
   margin-top: 2.4rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   img + img {
     margin-left: 2.4rem;
   }
@@ -125,13 +133,11 @@ export const Developers = styled.div`
 
 export const Image = styled.div`
   grid-area: IMAGE;
-  position: relative;
-  z-index: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0rem;
+  left: -8rem;
   img {
-    width: 1000px;
-    position: absolute;
-    z-index: 1;
-    top: -8rem;
-    left: -28rem;
+    width: 100%;
   }
 `;
