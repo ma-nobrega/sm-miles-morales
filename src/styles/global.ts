@@ -11,19 +11,18 @@ export default createGlobalStyle`
   }
   #root{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
   }
   body{
-    background: var(---color-background)
+    background: #0B0C10;
   }
   body,button, input, textarea{
-    font: 500 1.6rem Poppins;
+    font: 500 1.6rem Mukta;
     color: var(--color-text-base)
   }
   :root {
   font-size: 60%;
-  --color-background: #f0f3f7;
   }
   .container{
     width:90vw;
