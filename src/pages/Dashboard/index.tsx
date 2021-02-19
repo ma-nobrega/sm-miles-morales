@@ -38,16 +38,16 @@ const Dashboard: React.FC = () => {
               <img src={logo} alt="" />
             </Logo>
             <NavBarSecondary className="navbar">
-              <a href="#" className="nav-link">
+              <a href="lins" className="nav-link">
                 Home
               </a>
-              <a href="#" className="nav-link">
+              <a href="lins" className="nav-link">
                 Story
               </a>
-              <a href="#" className="nav-link">
+              <a href="lins" className="nav-link">
                 Wallpapers
               </a>
-              <a href="#">#BeYourself</a>
+              <a href="lins">#BeYourself</a>
             </NavBarSecondary>
           </NavBar>
 
@@ -70,8 +70,8 @@ const Dashboard: React.FC = () => {
             </p>
 
             <Buttons>
-              <a href="a">Pre-order now</a>
-              <a href="a">watch the teaser</a>
+              <a href="lins">Pre-order now</a>
+              <a href="lins">watch the teaser</a>
             </Buttons>
 
             <Developers>
