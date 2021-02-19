@@ -154,6 +154,8 @@ export const Buttons = styled.div`
   text-transform: uppercase;
   font-style: italic;
   a {
+    transform: skewX(-20deg);
+    transition: 0.7s ease;
     font-size: 1.4rem;
     display: flex;
     align-items: center;

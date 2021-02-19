@@ -38,16 +38,16 @@ const Dashboard: React.FC = () => {
               <img src={logo} alt="" />
             </Logo>
             <NavBarSecondary className="navbar">
-              <a href="a" className="nav-link">
+              <a href="#" className="nav-link">
                 Home
               </a>
-              <a href="a" className="nav-link">
+              <a href="#" className="nav-link">
                 Story
               </a>
-              <a href="a" className="nav-link">
+              <a href="#" className="nav-link">
                 Wallpapers
               </a>
-              <a href="a">#BeYourself</a>
+              <a href="#">#BeYourself</a>
             </NavBarSecondary>
           </NavBar>
 
