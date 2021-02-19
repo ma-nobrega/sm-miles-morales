@@ -14,6 +14,7 @@ import {
   Image,
   Video,
   Content,
+  Gradiente,
 } from './styles';
 
 import logo from '../../assets/icons/logo-spidermanbig.svg';
@@ -26,15 +27,10 @@ import spiderman2 from '../../video/spiderman2.mp4';
 const Dashboard: React.FC = () => {
   return (
     <Container>
-      <Video
-        autoPlay
-        muted
-        loop
-        poster="images/torres.jpg"
-        className="bg_video"
-      >
+      <Video autoPlay muted loop>
         <source src={spiderman2} type="video/mp4" />
       </Video>
+      <Gradiente />
       <Content>
         <Header>
           <NavBar>
@@ -81,6 +77,10 @@ const Dashboard: React.FC = () => {
             <Developers>
               <img src={ps} alt="" />
               <img src={marvel} alt="" />
+              <FaFacebookF />
+              <FaInstagram />
+              <FaYoutube />
+              <FaTwitter />
             </Developers>
           </Description>
           <Image>

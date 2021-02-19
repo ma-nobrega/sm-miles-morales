@@ -27,9 +27,26 @@ export const Video = styled.video`
     height: auto;
     width: 100%;
   }
+  @media (max-width: 1100px) {
+    display: none;
+  }
+`;
+
+export const Gradiente = styled.div`
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    110deg,
+    #0a0c10 25%,
+    rgba(11, 12, 16, 0.8) 50%,
+    #0a0c10 70%
+  );
 `;
 
 export const Header = styled.div`
+  z-index: 2;
   padding-top: 2rem;
   width: 100%;
   height: 10rem;
@@ -49,8 +66,8 @@ export const Logo = styled.a`
   align-items: center;
   justify-content: space-between;
   img {
-    height: 96px;
-    width: 96px;
+    height: 9.6rem;
+    width: 9.6rem;
   }
 `;
 
@@ -89,6 +106,7 @@ export const Social = styled.div`
 `;
 
 export const Main = styled.div`
+  z-index: 2;
   display: grid;
   position: relative;
   width: 100%;
@@ -104,7 +122,7 @@ export const Main = styled.div`
 `;
 
 export const Description = styled.div`
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   width: 100%;
   top: 8rem;
@@ -161,17 +179,27 @@ export const Buttons = styled.div`
 `;
 
 export const Developers = styled.div`
-  margin-top: 2.4rem;
+  margin: 2.4rem 0 0.8rem 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   img + img {
     margin-left: 2.4rem;
   }
+  > svg {
+    color: #c4c4c4;
+    height: 18px;
+    width: 18px;
+    margin-left: 2.4rem;
+    cursor: pointer;
+  }
+  @media (min-width: 750px) {
+    display: none;
+  }
 `;
 
 export const Image = styled.div`
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   left: -10rem;
   grid-area: IMAGE;
